@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=0.1">
+        <title>Article preview component-Frontend Mentor by Smilika</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="mainbox">
+            <img src="drawers.jpg" alt="table pic" id="pic-1">
+            <div class="mainpart">
+                <h1>
+                    Shift the overall look and feel by<br>
+                    adding these wonderful touches to<br>
+                    furniture in your home
+                </h1>
+                <p>Ever been in a room and felt like something was missing?<br>
+                    Perhaps it felt slightly bare and uninviting. I’ve got some<br>
+                    simple tips to help you make any room feel complete.
+                </p>
+                <div>
+                    <div class="base">
+                        <div class="profile">
+                            <img src="avatar-michelle.jpg" alt="michelle pic" id="pic-2">
+                            <p>Michelle Appleton<br>
+                                <span>28 Jun 2020</span></p>
+                        </div>
+                        <button class="img" onclick="show_hide()">
+                            <img src="icon-share.svg" alt="share icon" id="pic-3">
+                        </button>
+                    </div>
+                    <div id="share" STYLE="display:none">
+                        <div class="openshare">
+                            <p>S H A R E</p>
+                                <ul>
+                                    <li><img src="icon-facebook.svg" alt="facebook"></li>
+                                    <li><img src="icon-twitter.svg" alt="twitter"></li>
+                                    <li><img src="icon-pinterest.svg" alt="pinterest"></li>
+                                </ul>
+                        </div>
+                        <div class="triangle-down"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function show_hide(){
+                var x = document.getElementById('share');
+                if (x.style.display == 'none') {
+                    x.style.display = 'block';
+                } else {
+                    x.style.display = 'none';
+                }
+            }
+        </script>
+    </body>
+</html>
